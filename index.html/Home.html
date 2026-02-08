@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Pharmacy Store</title>
-    <link rel="stylesheet" href="../css_file/index.css">
+    <link rel="stylesheet" href="../css_file/Home.css">
 </head>
 
 <body>
@@ -99,5 +99,33 @@
     </footer>
 
 </body>
+<script>
+    const button = document.querySelector('.bu')
+    const loginpop = document.querySelector('.shop-header')
+    const form = document.createElement('form')
+
+    form.className = "log in"
+    form.id = "popup"
+    form.innerHTML = `<h2>Log In</h2>
+        
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your email"><br>
+
+            <label for="password">enter a password</label><br>
+            <input type="password" id="password" placeholder="enter registerd email"><br>
+
+            <button type="submit">Submit</button>`
+    form.style = ` max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;`
+
+    button.addEventListener('click', function (e) {
+        loginpop.appendChild(form)
+    })
+</script>
 
 </html>

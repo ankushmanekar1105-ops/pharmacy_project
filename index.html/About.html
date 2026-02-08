@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="../css_file/About.css">
+</head>
+
+<body>
+    <header>
+        <div class="headerinner">
+            <h1 class="logo-text">PHARMACY STORE</h1>
+
+            <nav class="mainnav">
+                <ul class="navlist">
+                    <li><a href="index3.html">Home</a></li>
+                    <li><a href="Shop.html">Shop</a></li>
+                    <li><a href="Artical.html">Article</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <button>LogIn</button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="about-header">
+            <h1>About</h1>
+        </section>
+
+        <section class="about-profile">
+            <p class="about-text">
+                About description text explaining the brand or person.
+                study the science of medicines to prepare and dispense drugs, focusing on pharmacology,
+                chemistry, and patient care, bridging health and pharmaceutical sciences for safe medication
+                use in diverse settings like hospitals, community pharmacies, and R&D, requiring strong
+                technical skills, critical thinking, and patient communication for a rewarding healthcare career
+            </p>
+            <img class="profile-image"
+                src="https://images.pexels.com/photos/32160037/pexels-photo-32160037.jpeg?_gl=1*apo74u*_ga*MTc0NTg2ODA5NS4xNzYwMjQ4MzM2*_ga_8JE65Q40S6*czE3Njg0NjkxNjQkbzUkZzEkdDE3Njg0NzE4MTUkajU5JGwwJGgw"
+                alt="">
+        </section>
+
+        <section>
+            <form class="styled-form">
+                <h2>Contact Us</h2>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Write your message"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+        </section>
+
+    </main>
+    <footer>
+        <h2>contact</h2>
+        © Pharmacy Store
+        <br><br>
+        <strong>Email:</strong> <a href="mailto:contactpharmacy@gmail.com"> contactpharmacy@gmail.com</a>
+        <br><br>
+        <strong>Phone:</strong> +91 XXXXXXXX
+    </footer>
+</body>
+<script>
+    const button = document.querySelector('.bu')
+    const loginpop = document.querySelector('.shop-header')
+    const form = document.createElement('form')
+
+    form.className = "log in"
+    form.id = "popup"
+    form.innerHTML = `<h2>Log In</h2>
+        
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your email"><br>
+
+            <label for="password">enter a password</label><br>
+            <input type="password" id="password" placeholder="enter registerd email"><br>
+
+            <button type="submit">Submit</button>`
+    form.style = ` max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;`
+
+    button.addEventListener('click', function (e) {
+        loginpop.appendChild(form)
+    })
+</script>
+
+</html>
