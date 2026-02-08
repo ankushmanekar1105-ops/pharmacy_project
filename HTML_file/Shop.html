@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../css_file/shop.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="headerinner">
+            <h1 class="logo-text">PHARMACY STORE</h1>
+
+            <nav class="mainnav">
+                <ul class="navlist">
+                    <li><a href="index3.html">Home</a></li>
+                    <li><a href="Shop.html">Shop</a></li>
+                    <li><a href="Artical.html">Article</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <button class="bu">LogIn</button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="shop-header">
+            <img src="https://images.pexels.com/photos/5407212/pexels-photo-5407212.jpeg?_gl=1*19tpst1*_ga*MTc0NTg2ODA5NS4xNzYwMjQ4MzM2*_ga_8JE65Q40S6*czE3NzA0ODM0MDgkbzExJGcxJHQxNzcwNDg0NTk3JGo1OCRsMCRoMA.."
+                alt="">
+            <h1>Shop title</h1>
+            <button class="but">bey now</button>
+        </section>
+
+        <section class="shop-products">
+            <h2 class="section-title">Heading</h2>
+
+            <div class="product">
+
+                <article class="product-card">
+                    <img class="product-image"
+                        src="https://images.pexels.com/photos/8657300/pexels-photo-8657300.jpeg?_gl=1*1qtn996*_ga*MTc0NTg2ODA5NS4xNzYwMjQ4MzM2*_ga_8JE65Q40S6*czE3Njg0NjkxNjQkbzUkZzEkdDE3Njg0NjkxNjUkajU5JGwwJGgw"
+                        alt="">
+                    <h3 class="product-name">Product name <p class="product-price">$00.00</p>
+                    </h3>
+                </article>
+
+                <article class="product-card">
+                    <img class="product-image"
+                        src="https://images.pexels.com/photos/593451/pexels-photo-593451.jpeg?_gl=1*1amkje7*_ga*MTc0NTg2ODA5NS4xNzYwMjQ4MzM2*_ga_8JE65Q40S6*czE3Njg0NjkxNjQkbzUkZzEkdDE3Njg0NjkxNjUkajU5JGwwJGgw"
+                        alt="">
+                    <h3 class="product-name">Product name <p class="product-price">$00.00</p>
+                    </h3>
+                </article>
+
+                <article class="product-card">
+                    <img class="product-image"
+                        src="https://images.pexels.com/photos/15897781/pexels-photo-15897781.jpeg?_gl=1*1amkje7*_ga*MTc0NTg2ODA5NS4xNzYwMjQ4MzM2*_ga_8JE65Q40S6*czE3Njg0NjkxNjQkbzUkZzEkdDE3Njg0NjkxNjUkajU5JGwwJGgw"
+                        alt="">
+                    <h3 class="product-name">Product name <p class="product-price">$00.00</p>
+                    </h3>
+                </article>
+
+                <article class="product-card">
+                    <img class="product-image"
+                        src="https://images.pexels.com/photos/8667539/pexels-photo-8667539.jpeg?_gl=1*2q8hyf*_ga*MTc0NTg2ODA5NS4xNzYwMjQ4MzM2*_ga_8JE65Q40S6*czE3Njg0NjkxNjQkbzUkZzEkdDE3Njg0NzA0OTAkajUzJGwwJGgw"
+                        alt="">
+                    <h3 class="product-name">Product name <p class="product-price">$00.00</p>
+                    </h3>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <h2 class="contact">contact</h2>
+        <p>© Pharmacy Store</p>
+        <strong>Email:</strong><a href="mailto:contactpharmacy@gmail.com">contactpharmacy@gmail.com</a>
+        <p>Phone: +91 XXXXXXXX</p>
+    </footer>
+
+</body>
+<script>
+    const button = document.querySelector('.bu')
+    const loginpop = document.querySelector('.shop-header')
+    const form = document.createElement('form')
+
+    form.className = "log in"
+    form.id = "popup"
+    form.innerHTML = `<h2>Log In</h2>
+        
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your email"><br>
+
+            <label for="password">enter a password</label><br>
+            <input type="password" id="password" placeholder="enter registerd email"><br>
+
+            <button type="submit">Submit</button>`
+    form.style = ` max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;`
+
+    button.addEventListener('click', function (e) {
+        loginpop.appendChild(form)
+    })
+</script>
+
+</html>

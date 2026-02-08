@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.headerinner{
+    background-color: rgb(11, 11, 59, 0.5);
+    border: 4px black ;
+    padding: 0px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navlist{
+    list-style: none;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+}
+.navlist li a{
+    color: black;
+    position: relative;
+    font-size: 12;
+    font-weight: 500;
+    text-decoration: none;
+}
+button{
+    width: 60px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    align-items: center;
+    background-color: rgb(12, 62, 62);
+    box-shadow: 10px rgb(50, 62, 62);
+    border-radius: 20px;
+}
+
+button:hover{
+    box-shadow: 0 0 20px rgb(74, 17, 17);
+    cursor: pointer;
+    transition: 0.3ms;
+}
+.article-header{
+    /* width: 100%;
+    height: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.articlehero{
+    width: 50%;
+    height: 500px;
+    margin: 20px;
+}
+p{
+    margin: 50px;
+}
+.flex{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 40PX;
+    /* align-items: center; */
+}
+.article-content{
+    text-align: center;
+}
+.article-content img{
+    width: 55%;
+    height: auto;
+}
+h2{
+    text-align: center;
+}
+.post{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    
+}
+.post-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.post-card img{
+    width: 60%;
+    height: auto;
+    margin-right: 20px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(22, 8, 8);
+    color: aliceblue;
+    position: relative;
+    bottom: 0;
+}
+.contact{
+    text-align: center;
+}
