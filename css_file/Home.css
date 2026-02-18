@@ -30,16 +30,17 @@
     text-decoration: none;
 }
 
-button {
-    width: 60px;
+.headerinner button{
+    width: 80px;
     height: 30px;
     font-weight: 600;
     font-size: 1rem;
     align-items: center;
-    background-color: rgb(12, 62, 62);
-    box-shadow: 10px rgb(50, 62, 62);
-    border-radius: 20px;
-}
+    background-color: rgb(16, 81, 81);
+    color: white;
+    box-shadow: 4px 4px 5px rgb(50, 62, 62);
+    border-radius: 20px;}
+    
 
 button:hover {
     box-shadow: 0 0 20px rgb(74, 17, 17);

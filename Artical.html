@@ -16,19 +16,20 @@
 
             <nav class="mainnav">
                 <ul class="navlist">
-                    <li><a href="index3.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="Shop.html">Shop</a></li>
                     <li><a href="Artical.html">Article</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
-            <button>LogIn</button>
+            <button class="bu">LogIn</button>
         </div>
     </header>
 
     <main id="page-article">
-
+            <div class="login"></div>
         <section class="article-header">
+            
             <h1 class="article-title">Article or post title</h1>
             <img class="articlehero"
                 src="https://images.pexels.com/photos/11768811/pexels-photo-11768811.jpeg?_gl=1*1w1ln16*_ga*MTc0NTg2ODA5NS4xNzYwMjQ4MzM2*_ga_8JE65Q40S6*czE3Njg1NTM5OTEkbzYkZzEkdDE3Njg1NTQwNzgkajM3JGwwJGgw"
@@ -99,21 +100,21 @@
 
 </body>
 <script>
-    const button = document.querySelector('.bu')
-    const loginpop = document.querySelector('.shop-header')
+    const button = document.querySelector('.headerinner button')
+    const div = document.querySelector('.login')
     const form = document.createElement('form')
-
+    
     form.className = "log in"
     form.id = "popup"
-    form.innerHTML = `<h2>Log In</h2>
+    form.innerHTML = `<h2 style="margin-bottom: 10px;">Log In</h2>
         
-            <label for="email">Email</label><br>
-            <input type="email" id="email" placeholder="Enter your email"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" placeholder="Enter your email" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 10px;><br><br>
 
-            <label for="password">enter a password</label><br>
-            <input type="password" id="password" placeholder="enter registerd email"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" placeholder="enter password" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 10px;"><br><br>
 
-            <button type="submit">Submit</button>`
+            <button type="submit" style="width: 100%; padding: 5px 0; background-color: #4CAF50; color: white; border: none; border-radius: 4px;">Submit</button>`
     form.style = ` max-width: 400px;
   margin: 40px auto;
   padding: 20px;
@@ -123,7 +124,7 @@
   font-family: Arial, sans-serif;`
 
     button.addEventListener('click', function (e) {
-        loginpop.appendChild(form)
+        div.appendChild(form)
     })
 </script>
 
