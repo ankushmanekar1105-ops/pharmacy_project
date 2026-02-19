@@ -2,30 +2,34 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+     overflow-x: hidden;
 }
-.headerinner{
+.headerinner {
     background-color: rgb(11, 11, 59, 0.5);
-    border: 4px black ;
+    border: 4px black;
     padding: 0px 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navlist{
+
+.navlist {
     list-style: none;
-    
+
     display: flex;
     flex-direction: row;
     gap: 2rem;
 
 }
-.navlist li a{
+
+.navlist li a {
     color: black;
     position: relative;
     font-size: 12;
     font-weight: 500;
     text-decoration: none;
 }
+
 .headerinner button{
     width: 80px;
     height: 30px;
@@ -36,38 +40,71 @@
     color: white;
     box-shadow: 4px 4px 5px rgb(50, 62, 62);
     border-radius: 20px;}
-.styled-form button{
-    width: 100%;
-    height: 30px;
-    font-weight: 600;
-    font-size: 1rem;
-    align-items: center;
-    background-color: rgb(16, 81, 81);
-    box-shadow: 4px 4px 5px rgb(50, 62, 62);
-    border-radius: 20px;
+    
+
+button:hover {
+    box-shadow: 0 0 20px rgb(74, 17, 17);
+    cursor: pointer;
+    transition: 0.3ms;
 }
+.navlist li a:hover{
+    box-shadow: 5px 5px 7px rgb(74, 17, 17);
+    color: rgb(9, 15, 15);
+    transition: 0.2ms;
+}
+.logo-text:hover{
+    text-shadow: 10px -7px 15px rgb(74, 17, 17);
+}
+.headerinner:hover{
+    border: 2px solid rgb(74, 17, 17);
+    box-shadow: 5px 5px 7px rgb(74, 17, 17);
+}
+
+img:hover{
+    border: 5px solid rgb(74, 17, 17);
+}
+p:hover{
+    cursor: pointer;
+    text-shadow: 7px 0 20px rgb(102, 85, 85);
+    transition: 0.3ms;
+}
+h2:hover{
+    text-shadow: 5px 0 20px rgb(9, 9, 9);
+    transition: 0.3ms;
+}
+h3:hover{
+    text-shadow: 0 0 20px rgb(9, 9, 9);
+    transition: 0.3ms;
+}
+.styled-form:hover{
+    border: 2px solid rgb(74, 17, 17);
+    box-shadow: 0 0 20px rgb(74, 17, 17);
+    transition: 0.3ms;
+}
+
 .about-header{
     background-color: rgb(28, 9, 9);
     color: rgb(168, 242, 154);
+}
+.about-header h1{
+    text-align: center;
+    margin-bottom: 10px;
 }
 .about-profile{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 50px;
 }
-.profile-image{
-    width: 500px;
-    height: 500px;
-    margin: 50px;
+
+.about-profile img{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
 
 }
-p{
-    width: 600px;
-    height: 400px;
-    margin-left: 50px;
-    margin-top: 20px;
-}
+
 .styled-form {
   max-width: 400px;
   margin: 40px auto;
@@ -125,16 +162,118 @@ p{
 }
 
 footer{
-    display: flex;
-    flex-direction: column;
+    text-align: center;
     background-color: rgb(22, 8, 8);
     color: aliceblue;
     position: relative;
     bottom: 0;
+
 }
 .contact{
     text-align: center;
 }
 h2{
     text-align: center;
+}
+img {
+    border-radius: 1rem;
+}
+
+@media(max-width: 856px) {
+    .headerinner {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: start;
+        background-color: transparent;
+        
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        background-color: rgb(11, 11, 59, 0.5);
+        padding: 10px;
+    }
+    .logo-text{
+        text-align: center;
+        width: 100%;
+        background-color: transparent;
+    }
+    .about-profile{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    .about-profile img{
+        width: 30rem;
+        max-width: 1200px;
+        height: 30rem;
+
+        margin: auto;
+
+    }
+}
+@media(min-width: 856px) {
+        .headerinner {
+            flex-direction: row;
+            gap: 1.5rem;
+            align-items: center;
+            background-color: rgb(11, 11, 59, 0.5);
+            margin: 0px 5%;
+        }
+        .logo-text{
+            text-align: center;
+            display: block;
+            background-color: transparent;
+            
+        }
+
+
+    }
+
+@media(max-width: 450px) {
+        .headerinner {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1.5rem;
+            align-items: flex-start;
+            background-color: transparent;
+        }
+        .navbar{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: auto;
+            background-color: rgb(11, 11, 59, 0.5);
+            /* padding: 10px; */
+            margin-left: 0px;
+            font-weight: 100;
+        }
+        .navbar ul {
+            display: flex;
+            flex-direction: column;
+           
+            align-items: flex-start;
+        }
+
+        
+        .logo-text{
+            text-align: center;
+            display: block;
+            background-color: transparent;
+        }
+
+        .about-profile img{
+            width: 10rem;
+            max-width: 1200px;
+            height: 10rem;
+
+            margin: auto;
+
+        }
+        
 }
